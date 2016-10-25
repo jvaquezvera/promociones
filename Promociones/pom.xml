@@ -6,7 +6,7 @@
   <artifactId>Promociones</artifactId>
   <version>1.0</version>
   <name>Promociones</name>
-  <description>Proyecto que contiene tabla de descicion para el manejo de ofertas </description>
+  <description>Proyecto que contiene tabla de descicion para el manejo de ofertas</description>
   <build>
     <plugins>
       <plugin>
