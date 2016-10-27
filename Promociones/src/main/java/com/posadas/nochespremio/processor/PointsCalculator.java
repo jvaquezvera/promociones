@@ -124,7 +124,7 @@ public class PointsCalculator {
  	
 	private void createTotalPayment(Map<String,TotalPoints> tot, AvailavilityResDTO avail) {
 		List<PaymentDTO> payments=new ArrayList<>(tot.size());
-		avail.setPayments(payments);
+		avail.setTotalPayment(payments);
 		
 		for(Entry<String, TotalPoints> entry : tot.entrySet()){
 //			DecimalFormat df = new DecimalFormat(DECIMAL_FORMAT);
