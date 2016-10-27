@@ -30,7 +30,7 @@ public class PointsCalculator {
 	
 	private static final float CONSTANT_POINTS = 1000;
 	
-	private static final Logger logger=Logger.getLogger(PointsCalculator.class);
+	
 	
  	public PaymentDTO calculate(String currency, float amount, float factor, float tc){
 // 		DecimalFormat df = new DecimalFormat(DECIMAL_FORMAT);
