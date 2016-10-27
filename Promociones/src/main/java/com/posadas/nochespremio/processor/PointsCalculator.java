@@ -107,7 +107,7 @@ public class PointsCalculator {
  				
  				tot.put(roomRate.getRoomType(), totAcum);
  			}else{
- 				logger.trace("Agregando tipo de habitacion: " + roomRate.getRoomType());
+ 				System.out.println("Agregando tipo de habitacion: " + roomRate.getRoomType());
  				TotalPoints totAcum = new TotalPoints(payment.getPoints(), 
  											payment.getMixedPoints(), 
  											payment.getCash());
@@ -118,7 +118,7 @@ public class PointsCalculator {
  		
  		this.createTotalPayment(tot, avail);
  		Collections.sort(avail.getRoomRates(), new roomRatesComparator());
- 		logger.trace("Avail con totales --> "+avail);
+ 		System.out.println("Avail con totales --> "+avail);
  		
  	}
  	
