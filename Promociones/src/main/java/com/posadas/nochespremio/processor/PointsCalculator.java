@@ -21,6 +21,7 @@ public class PointsCalculator {
 	private float factorISH;
 	private float factorPoints;
 	private float factorCash;
+	
 	private float iva;
 	
 	private static final String MXN="MXN";
