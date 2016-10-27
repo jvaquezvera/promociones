@@ -33,7 +33,7 @@ public class AvailavilityResDTO {
 	
 	@XmlElement(name="payment")
 	@XmlElementWrapper(name="totalPayment")
-	private List<PaymentDTO> payments;
+	private List<PaymentDTO> totalPayment;
 	
 	public List<RoomRateDTO> getRoomRates() {
 		return roomRates;
@@ -43,12 +43,12 @@ public class AvailavilityResDTO {
 		this.roomRates = roomRates;
 	}
 
-	public List<PaymentDTO> getPayments() {
-		return payments;
+	public List<PaymentDTO> getTotalPayment() {
+		return totalPayment;
 	}
 
-	public void setPayments(List<PaymentDTO> payments) {
-		this.payments = payments;
+	public void setTotalPayment(List<PaymentDTO> totalPayment) {
+		this.totalPayment = totalPayment;
 	}
 
 	public String getStatus() {
