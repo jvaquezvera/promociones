@@ -71,7 +71,7 @@ public class PointsCalculator {
 	}
  	
  	private float getFactor(String program){
- 		logger.debug("Calculando puntos para programa: "+program);
+
  		if(program.equals("Motiva"))
  			return this.factorMO;
  		else if(program.equals("Apreciare"))
@@ -81,17 +81,15 @@ public class PointsCalculator {
  		
  	}
  	
- 	public void getPoints(@Body AvailavilityResDTO avail, 
- 			@ExchangeProperty("program") String program,
- 			@ExchangeProperty("rateExchange") float tc) {
- 		logger.debug("Usando tipo de cambio: "+tc);
+ 	public void getPoints(AvailavilityResDTO avail,String program, float tc) {
+ 		System.out.println("Usando tipo de cambio: "+tc);
  		Map<String,TotalPoints> tot=new HashMap<>();
  		short identifier = 1;
  		float factor = this.getFactor(program);
  		avail.setProgramName(program);
  		avail.setFactor(factor);
  		avail.setRateExchange(tc);
- 		logger.debug("Calculando puntos con Factor: " + factor);
+ 		System.out.println("Calculando puntos con Factor: " + factor);
  		
  		for(RoomRateDTO roomRate : avail.getRoomRates()){
 // 			Calculo de puntos por noche
