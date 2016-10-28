@@ -30,6 +30,11 @@ public class RoomRateDTO implements Comparable<RoomRateDTO>{
 		return start;
 	}
 	
+	public void calculaStart(){
+		SimpleDateFormat sdf=new SimpleDateFormat("yyyy-MM-dd");
+		this.startDate = sdf.parse(start);
+	}
+
 	@XmlAttribute(name="start")
 	public void setStart(String start) throws ParseException {
 		this.start = start;
