@@ -30,7 +30,7 @@ public class RoomRateDTO implements Comparable<RoomRateDTO>{
 		return start;
 	}
 	
-	public void calculaStart(){
+	public void calculaStart()throws ParseException {
 		SimpleDateFormat sdf=new SimpleDateFormat("yyyy-MM-dd");
 		this.startDate = sdf.parse(start);
 	}
