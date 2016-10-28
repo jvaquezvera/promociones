@@ -88,7 +88,6 @@ public class PointsCalculator {
  		float factor = this.getFactor(avail.getProgramName());
  		avail.setProgramName(avail.getProgramName());
  		avail.setFactor(factor);
- 		avail.setRateExchange(avail.getRateExchange());
  		System.out.println("Calculando puntos con Factor: " + factor);
  		
  		for(RoomRateDTO roomRate : avail.getRoomRates()){
