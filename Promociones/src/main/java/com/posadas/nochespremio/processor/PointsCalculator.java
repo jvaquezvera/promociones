@@ -174,4 +174,65 @@ public class PointsCalculator {
 		this.factorCash = 1 - this.factorPoints;
 		
 	}
+
+
+	   public float getFactorFR() {
+        return factorFR;
+    }
+
+    public void setFactorFR(float factorFR) {
+        this.factorFR = factorFR;
+    }
+
+    public float getFactorMO() {
+        return factorMO;
+    }
+
+    public void setFactorMO(float factorMO) {
+        this.factorMO = factorMO;
+    }
+
+    public float getFactorAP() {
+        return factorAP;
+    }
+
+    public void setFactorAP(float factorAP) {
+        this.factorAP = factorAP;
+    }
+
+    public float getFactorISH() {
+        return factorISH;
+    }
+
+    public void setFactorISH(float factorISH) {
+        this.factorISH = factorISH;
+    }
+
+    public float getFactorPoints() {
+        return factorPoints;
+    }
+
+    public void setFactorPoints(float factorPoints) {
+        this.factorPoints = factorPoints;
+    }
+
+    public float getFactorCash() {
+        return factorCash;
+    }
+
+    public void setFactorCash(float factorCash) {
+        this.factorCash = factorCash;
+    }
+
+    public float getIva() {
+        return iva;
+    }
+
+    public void setIva(float iva) {
+        this.iva = iva;
+    }
+	
+        
+
+
 }
