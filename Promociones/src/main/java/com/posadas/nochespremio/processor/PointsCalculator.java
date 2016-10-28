@@ -81,7 +81,7 @@ public class PointsCalculator {
  		
  	}
  	
- 	public void getPoints(AvailavilityResDTO avail) {
+ 	public void getPoints(AvailavilityResDTO avail) throws ParseException {
  		System.out.println("Usando tipo de cambio: "+avail.getRateExchange());
  		Map<String,TotalPoints> tot=new HashMap<>();
  		short identifier = 1;
