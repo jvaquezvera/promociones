@@ -11,6 +11,7 @@ import java.util.Map.Entry;
 import com.posadas.nochespremio.dto.AvailavilityResDTO;
 import com.posadas.nochespremio.dto.PaymentDTO;
 import com.posadas.nochespremio.dto.RoomRateDTO;
+import java.text.ParseException;
 
 public class PointsCalculator {
 	
