@@ -1,9 +1,11 @@
 package com.posadas.nochespremio.dto;
+import com.posadas.nochespremio.processor.PointsCalculator;
 
 rule "inicializa parametros"
 no-loop true
 when 
-	value(true)
+	eval(true)
 then
-	System.out.println("$AvailavilityRes"+$AvailavilityRes );
+	PointsCalculator pointsCalculator= new PointsCalculator();
+	insert(pointsCalculator);
 end
