@@ -1,2 +1,12 @@
 package com.posadas.nochespremio.processor;
 
+rule "inicializa parametros"
+no-loop true
+when 
+	eval(true)
+then
+	PointsCalculator pointsCalculator= new 	PointsCalculator();
+	pointsCalculator.setFactorAP(124f);
+end
+
+
