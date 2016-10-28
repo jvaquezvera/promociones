@@ -11,7 +11,8 @@ then
 	pointsCalculator.setFactorFR(125f);
 	pointsCalculator.setFactorISH(56f);
 	pointsCalculator.setFactorMO(26f);
-	pointsCalculator.setPoints(21);
+	pointsCalculator.setFactorPoints(21);
+	insert(pointsCalculator);
 end
 
 
