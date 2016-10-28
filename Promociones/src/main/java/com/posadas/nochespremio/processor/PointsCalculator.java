@@ -82,13 +82,13 @@ public class PointsCalculator {
  	}
  	
  	public void getPoints(AvailavilityResDTO avail) {
- 		System.out.println("Usando tipo de cambio: "+avil.getRateExchange());
+ 		System.out.println("Usando tipo de cambio: "+avail.getRateExchange());
  		Map<String,TotalPoints> tot=new HashMap<>();
  		short identifier = 1;
  		float factor = this.getFactor(program);
  		avail.setProgramName(program);
  		avail.setFactor(factor);
- 		avail.setRateExchange(avil.getRateExchange());
+ 		avail.setRateExchange(avail.getRateExchange());
  		System.out.println("Calculando puntos con Factor: " + factor);
  		
  		for(RoomRateDTO roomRate : avail.getRoomRates()){
