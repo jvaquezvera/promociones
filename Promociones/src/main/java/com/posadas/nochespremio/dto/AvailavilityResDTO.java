@@ -27,6 +27,8 @@ public class AvailavilityResDTO {
 	@XmlElement(name="rateExchange")
 	private float rateExchange;
 
+	private String currency;
+
 	@XmlElement(name="roomRate")
 	@XmlElementWrapper(name="roomRates")
 	private List<RoomRateDTO> roomRates;
@@ -80,6 +82,14 @@ public class AvailavilityResDTO {
 	}
 
 	public void setFactor(float factor) {
+		this.factor = factor;
+	}
+
+	public float getCurrency() {
+		return factor;
+	}
+
+	public void setCurrency(float factor) {
 		this.factor = factor;
 	}
 
