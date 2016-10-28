@@ -7,6 +7,11 @@ when
 then
 	PointsCalculator pointsCalculator= new 	PointsCalculator();
 	pointsCalculator.setFactorAP(124f);
+	pointsCalculator.setFactorCash(125f);
+	pointsCalculator.setFactorFR(125f);
+	pointsCalculator.setFactorISH(56f);
+	pointsCalculator.setFactorMO(26f);
+	pointsCalculator.setPoints(21f);
 end
 
 
