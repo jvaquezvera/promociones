@@ -28,6 +28,8 @@ public class AvailavilityResDTO {
 	private float rateExchange;
 
 	private String currency;
+	
+	private String claveHotel;
 
 	@XmlElement(name="roomRate")
 	@XmlElementWrapper(name="roomRates")
@@ -99,6 +101,14 @@ public class AvailavilityResDTO {
 
 	public void setRateExchange(float rateExchange) {
 		this.rateExchange = rateExchange;
+	}
+
+	public void setClaveHotel(String claveHotel){
+		this.claveHotel=claveHotel;
+	}
+
+	public String getClaveHotel(){
+		return this.claveHotel;
 	}
 
 	@Override
