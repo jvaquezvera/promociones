@@ -86,7 +86,7 @@ public class PointsCalculator {
  		Map<String,TotalPoints> tot=new HashMap<>();
  		short identifier = 1;
  		float factor = this.getFactor(avail.getProgramName());
- 		avail.setProgramName(program);
+ 		avail.setProgramName(avail.getProgramName());
  		avail.setFactor(factor);
  		avail.setRateExchange(avail.getRateExchange());
  		System.out.println("Calculando puntos con Factor: " + factor);
