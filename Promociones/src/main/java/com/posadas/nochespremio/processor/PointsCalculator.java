@@ -31,6 +31,7 @@ public class PointsCalculator {
 	private static final float CONSTANT_POINTS = 1000;
 
 	private float rateExchange;
+	private String program;
 	
 	
 	
