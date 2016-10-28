@@ -1,1 +1,4 @@
 com.posadas.nochespremio.**
+com.posadas.nochespremio.dto.**
+com.posadas.nochespremio.processor.**
+com.posadas.nochespremio.rules.**
