@@ -29,6 +29,8 @@ public class PointsCalculator {
 //	private static final String DECIMAL_FORMAT="#.##";
 	
 	private static final float CONSTANT_POINTS = 1000;
+
+	private float rateExchange;
 	
 	
 	
@@ -81,19 +83,19 @@ public class PointsCalculator {
  		
  	}
  	
- 	public void getPoints(AvailavilityResDTO avail,String program, float tc) {
- 		System.out.println("Usando tipo de cambio: "+tc);
+ 	public void getPoints(AvailavilityResDTO avail) {
+ 		System.out.println("Usando tipo de cambio: "+rateExchange);
  		Map<String,TotalPoints> tot=new HashMap<>();
  		short identifier = 1;
  		float factor = this.getFactor(program);
  		avail.setProgramName(program);
  		avail.setFactor(factor);
- 		avail.setRateExchange(tc);
+ 		avail.setRateExchange(rateExchange);
  		System.out.println("Calculando puntos con Factor: " + factor);
  		
  		for(RoomRateDTO roomRate : avail.getRoomRates()){
 // 			Calculo de puntos por noche
- 			PaymentDTO payment = this.calculate(roomRate.getCurrency(), roomRate.getAmount(), factor, tc);
+ 			PaymentDTO payment = this.calculate(roomRate.getCurrency(), roomRate.getAmount(), factor, rateExchange);
  			payment.setIdentifier(identifier++);
  			roomRate.setPayment(payment);
  			
