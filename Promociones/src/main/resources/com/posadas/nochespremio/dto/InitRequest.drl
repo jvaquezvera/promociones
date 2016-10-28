@@ -1,10 +1,9 @@
 package com.posadas.nochespremio.dto;
 
-
 rule "inicializa parametros"
 no-loop true
 when 
-	$AvailavilityRes: AvailavilityResDTO()
+	value(true)
 then
 	System.out.println("$AvailavilityRes"+$AvailavilityRes );
 end
