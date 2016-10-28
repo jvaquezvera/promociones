@@ -85,7 +85,7 @@ public class PointsCalculator {
  		System.out.println("Usando tipo de cambio: "+avail.getRateExchange());
  		Map<String,TotalPoints> tot=new HashMap<>();
  		short identifier = 1;
- 		float factor = this.getFactor(program);
+ 		float factor = this.getFactor(avail.getProgramName());
  		avail.setProgramName(program);
  		avail.setFactor(factor);
  		avail.setRateExchange(avail.getRateExchange());
