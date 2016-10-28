@@ -31,6 +31,12 @@ public class AvailavilityResDTO {
 	
 	private String claveHotel;
 
+	//campos para descuentos
+	private String dateInicialPromo;
+	private String dateFinalPromo;
+	private float porcentaje;	
+				
+
 	@XmlElement(name="roomRate")
 	@XmlElementWrapper(name="roomRates")
 	private List<RoomRateDTO> roomRates;
@@ -110,6 +116,30 @@ public class AvailavilityResDTO {
 	public String getClaveHotel(){
 		return this.claveHotel;
 	}
+
+	public String getDateInicialPromo() {
+        return dateInicialPromo;
+    }
+
+    public void setDateInicialPromo(String dateInicialPromo) {
+        this.dateInicialPromo = dateInicialPromo;
+    }
+
+    public String getDateFinalPromo() {
+        return dateFinalPromo;
+    }
+
+    public void setDateFinalPromo(String dateFinalPromo) {
+        this.dateFinalPromo = dateFinalPromo;
+    }
+
+    public float getPorcentaje() {
+        return porcentaje;
+    }
+
+    public void setPorcentaje(float porcentaje) {
+        this.porcentaje = porcentaje;
+    }
 
 	@Override
 	public String toString() {
