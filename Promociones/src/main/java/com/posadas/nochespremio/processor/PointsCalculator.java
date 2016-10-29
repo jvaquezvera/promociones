@@ -95,7 +95,7 @@ public class PointsCalculator {
  		for(RoomRateDTO roomRate : avail.getRoomRates()){
 // 			Calculo de puntos por noche
 			roomRate.calculaStart();
-			System.out.println("roomRate: " + roomRate.getStartDate());
+			System.out.println("roomRate: " + roomRate);
  			PaymentDTO payment = this.calculate(roomRate.getCurrency(), roomRate.getAmount(), factor, avail.getRateExchange(),avail.getIva());
  			payment.setIdentifier(identifier++);
  			roomRate.setPayment(payment);
