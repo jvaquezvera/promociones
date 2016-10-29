@@ -23,7 +23,7 @@ public class PointsCalculator {
 	private float factorPoints;
 	private float factorCash;
 	
-	private float iva;
+	
 	
 	private static final String MXN="MXN";
 	private static final String USD="USD";
@@ -33,7 +33,7 @@ public class PointsCalculator {
 
 	
 	
- 	public PaymentDTO calculate(String currency, float amount, float factor, float tc){
+ 	public PaymentDTO calculate(String currency, float amount, float factor, float tc, float iva){
 // 		DecimalFormat df = new DecimalFormat(DECIMAL_FORMAT);
 		PaymentDTO payment = new PaymentDTO();
 		
@@ -96,7 +96,7 @@ public class PointsCalculator {
 // 			Calculo de puntos por noche
 			roomRate.calculaStart();
 			System.out.println("roomRate: " + roomRate.getStartDate());
- 			PaymentDTO payment = this.calculate(roomRate.getCurrency(), roomRate.getAmount(), factor, avail.getRateExchange());
+ 			PaymentDTO payment = this.calculate(roomRate.getCurrency(), roomRate.getAmount(), factor, avail.getRateExchange(),avail.getIva());
  			payment.setIdentifier(identifier++);
  			roomRate.setPayment(payment);
  			
@@ -227,15 +227,7 @@ public class PointsCalculator {
         this.factorCash = factorCash;
     }
 
-    public float getIva() {
-        return iva;
-    }
-
-    public void setIva(float iva) {
-        this.iva = iva;
-    }
-	
-        
+    
 
 
 }
