@@ -7,12 +7,13 @@ when
 	eval(true)
 then
 	PointsCalculator pointsCalculator= new 	PointsCalculator();
-	pointsCalculator.setFactorAP(124f);
-	pointsCalculator.setFactorCash(125f);
-	pointsCalculator.setFactorFR(125f);
-	pointsCalculator.setFactorISH(56f);
-	pointsCalculator.setFactorMO(26f);
-	pointsCalculator.setFactorPoints(21);
+	pointsCalculator.setFactorAP(3.2f);
+	
+	pointsCalculator.setFactorFR(3.10f);
+	pointsCalculator.setFactorISH(1.02f);
+	pointsCalculator.setFactorMO(3.15f);
+	pointsCalculator.setFactorPoints(.55f);
+	pointsCalculator.setFactorCash(.45f);
 	insert(pointsCalculator);
 end
 
