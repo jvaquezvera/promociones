@@ -8,142 +8,213 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlElementWrapper;
 import javax.xml.bind.annotation.XmlRootElement;
 
-@XmlRootElement(name="availabilityRes")
+@XmlRootElement(name = "availabilityRes")
 @XmlAccessorType(XmlAccessType.FIELD)
-public class AvailavilityResDTO {
-	
-	@XmlElement(name="requestId")
-	private String requestId;
-	
-	@XmlElement(name="status")
-	private String status;
-	
-	@XmlElement(name="programName")
-	private String programName;
-	
-	@XmlElement(name="factor")
-	private float factor;
-	
-	@XmlElement(name="rateExchange")
-	private float rateExchange;
+public class AvailavilityResDTO
+{
 
-	private String currency;
-	
-	private String claveHotel;
+   @XmlElement(name = "requestId")
+   private String requestId;
 
-	//campos para descuentos
-	private String dateInicialPromo;
-	private String dateFinalPromo;
-	private float porcentaje;	
-				
+   @XmlElement(name = "status")
+   private String status;
 
-	@XmlElement(name="roomRate")
-	@XmlElementWrapper(name="roomRates")
-	private List<RoomRateDTO> roomRates;
-	
-	@XmlElement(name="payment")
-	@XmlElementWrapper(name="totalPayment")
-	private List<PaymentDTO> totalPayment;
-	
-	public List<RoomRateDTO> getRoomRates() {
-		return roomRates;
-	}
+   @XmlElement(name = "programName")
+   private String programName;
 
-	public void setRoomRates(List<RoomRateDTO> roomRates) {
-		this.roomRates = roomRates;
-	}
+   @XmlElement(name = "factor")
+   private float factor;
 
-	public List<PaymentDTO> getTotalPayment() {
-		return totalPayment;
-	}
+   @XmlElement(name = "rateExchange")
+   private float rateExchange;
 
-	public void setTotalPayment(List<PaymentDTO> totalPayment) {
-		this.totalPayment = totalPayment;
-	}
+   private String currency;
 
-	public String getStatus() {
-		return status;
-	}
+   private String claveHotel;
 
-	public void setStatus(String status) {
-		this.status = status;
-	}
-	
-	public String getRequestId() {
-		return requestId;
-	}
+   //campos para descuentos
+   private String dateInicialPromo;
+   private String dateFinalPromo;
+   private float porcentaje;
 
-	public void setRequestId(String requestId) {
-		this.requestId = requestId;
-	}
+   @XmlElement(name = "roomRate")
+   @XmlElementWrapper(name = "roomRates")
+   private List<RoomRateDTO> roomRates;
 
-	public String getProgramName() {
-		return programName;
-	}
+   @XmlElement(name = "payment")
+   @XmlElementWrapper(name = "totalPayment")
+   private List<PaymentDTO> totalPayment;
 
-	public void setProgramName(String programName) {
-		this.programName = programName;
-	}
-	
-	public float getFactor() {
-		return factor;
-	}
+   private float iva;
 
-	public void setFactor(float factor) {
-		this.factor = factor;
-	}
+   public List<RoomRateDTO> getRoomRates()
+   {
+      return roomRates;
+   }
 
-	public float getCurrency() {
-		return factor;
-	}
+   public void setRoomRates(List<RoomRateDTO> roomRates)
+   {
+      this.roomRates = roomRates;
+   }
 
-	public void setCurrency(float factor) {
-		this.factor = factor;
-	}
+   public List<PaymentDTO> getTotalPayment()
+   {
+      return totalPayment;
+   }
 
-	public float getRateExchange() {
-		return rateExchange;
-	}
+   public void setTotalPayment(List<PaymentDTO> totalPayment)
+   {
+      this.totalPayment = totalPayment;
+   }
 
-	public void setRateExchange(float rateExchange) {
-		this.rateExchange = rateExchange;
-	}
+   public String getStatus()
+   {
+      return status;
+   }
 
-	public void setClaveHotel(String claveHotel){
-		this.claveHotel=claveHotel;
-	}
+   public void setStatus(String status)
+   {
+      this.status = status;
+   }
 
-	public String getClaveHotel(){
-		return this.claveHotel;
-	}
+   public String getRequestId()
+   {
+      return requestId;
+   }
 
-	public String getDateInicialPromo() {
-        return dateInicialPromo;
-    }
+   public void setRequestId(String requestId)
+   {
+      this.requestId = requestId;
+   }
 
-    public void setDateInicialPromo(String dateInicialPromo) {
-        this.dateInicialPromo = dateInicialPromo;
-    }
+   public String getProgramName()
+   {
+      return programName;
+   }
 
-    public String getDateFinalPromo() {
-        return dateFinalPromo;
-    }
+   public void setProgramName(String programName)
+   {
+      this.programName = programName;
+   }
 
-    public void setDateFinalPromo(String dateFinalPromo) {
-        this.dateFinalPromo = dateFinalPromo;
-    }
+   public float getFactor()
+   {
+      return factor;
+   }
 
-    public float getPorcentaje() {
-        return porcentaje;
-    }
+   public void setFactor(float factor)
+   {
+      this.factor = factor;
+   }
 
-    public void setPorcentaje(float porcentaje) {
-        this.porcentaje = porcentaje;
-    }
+   public float getCurrency()
+   {
+      return factor;
+   }
 
-	@Override
-	public String toString() {
-		return "AvailavilityResDTO [roomRates=" + roomRates + ", payments=" + totalPayment + ", status=" + status + "]";
-	}
+   public void setCurrency(float factor)
+   {
+      this.factor = factor;
+   }
+
+   public float getRateExchange()
+   {
+      return rateExchange;
+   }
+
+   public void setRateExchange(float rateExchange)
+   {
+      this.rateExchange = rateExchange;
+   }
+
+   public void setClaveHotel(String claveHotel)
+   {
+      this.claveHotel = claveHotel;
+   }
+
+   public String getClaveHotel()
+   {
+      return this.claveHotel;
+   }
+
+   public String getDateInicialPromo()
+   {
+      return dateInicialPromo;
+   }
+
+   public void setDateInicialPromo(String dateInicialPromo)
+   {
+      this.dateInicialPromo = dateInicialPromo;
+   }
+
+   public String getDateFinalPromo()
+   {
+      return dateFinalPromo;
+   }
+
+   public void setDateFinalPromo(String dateFinalPromo)
+   {
+      this.dateFinalPromo = dateFinalPromo;
+   }
+
+   public float getPorcentaje()
+   {
+      return porcentaje;
+   }
+
+   public void setPorcentaje(float porcentaje)
+   {
+      this.porcentaje = porcentaje;
+   }
+
+   @Override
+   public String toString()
+   {
+      return "AvailavilityResDTO [roomRates=" + roomRates + ", payments=" + totalPayment + ", status=" + status + "]";
+   }
+
+   public float getIva()
+   {
+      return this.iva;
+   }
+
+   public void setIva(float iva)
+   {
+      this.iva = iva;
+   }
+
+   public AvailavilityResDTO()
+   {
+   }
+
+   public AvailavilityResDTO(
+         java.lang.String requestId,
+         java.lang.String status,
+         java.lang.String programName,
+         float factor,
+         float rateExchange,
+         java.lang.String currency,
+         java.lang.String claveHotel,
+         java.lang.String dateInicialPromo,
+         java.lang.String dateFinalPromo,
+         float porcentaje,
+         java.util.List<com.posadas.nochespremio.dto.RoomRateDTO> roomRates,
+         java.util.List<com.posadas.nochespremio.dto.PaymentDTO> totalPayment,
+         float iva)
+   {
+      this.requestId = requestId;
+      this.status = status;
+      this.programName = programName;
+      this.factor = factor;
+      this.rateExchange = rateExchange;
+      this.currency = currency;
+      this.claveHotel = claveHotel;
+      this.dateInicialPromo = dateInicialPromo;
+      this.dateFinalPromo = dateFinalPromo;
+      this.porcentaje = porcentaje;
+      this.roomRates = roomRates;
+      this.totalPayment = totalPayment;
+      this.iva = iva;
+   }
 
 }
