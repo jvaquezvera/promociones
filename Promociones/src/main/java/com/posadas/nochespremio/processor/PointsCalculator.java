@@ -199,6 +199,9 @@ public class PointsCalculator {
 //			p.setCash(new Float(df.format(entry.getValue().cash)));
 			p.setCash(new Float(entry.getValue().cash));
 			p.setMixedPoints(entry.getValue().mixedPoints);
+			p.setPointsPromo(entry.getValue().pointsPromo);
+			p.setCashPromo(new Float(entry.getValue().cashPromo));
+			p.setMixedPointsPromo(entry.getValue().mixedPointsPromo);
 			payments.add(p);
 		}
 		
