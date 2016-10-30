@@ -224,7 +224,6 @@ public class PointsCalculator {
 		int pointsPromo;
 		int mixedPointsPromo;
 		float cashPromo;
-..
 		
 		public TotalPoints(int points, int mixedPoints, float cash,int pointsPromo, int mixedPointsPromo, float cashPromo) {
 			this.cash = cash;
