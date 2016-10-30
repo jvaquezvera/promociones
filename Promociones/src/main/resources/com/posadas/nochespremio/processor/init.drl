@@ -21,8 +21,8 @@ rule "calcula response"
 no-loop true
 when 
 	$pointsCalculator: PointsCalculator( )
-	$availavilityResDTO: AvailavilityResDTO($final:totalPayment)
-	eval($final.size() == 0 )
+	$availavilityResDTO: AvailavilityResDTO(factor != 0 )
+	
 then
 	$pointsCalculator.getPoints($availavilityResDTO);
 	System.out.println("update");
