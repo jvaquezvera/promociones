@@ -21,7 +21,7 @@ end
 rule "calcula response"
 no-loop true
 when 
-	$pointsCalculator: PointsCalculator( )
+	$pointsCalculator: PointsCalculator( factorAP != 0 )
 	$availavilityResDTO: AvailavilityResDTO()
 	
 then
