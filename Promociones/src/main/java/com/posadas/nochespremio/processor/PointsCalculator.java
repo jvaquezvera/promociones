@@ -92,9 +92,9 @@ public class PointsCalculator {
 	System.out.println("--"+factorAP);
 	System.out.println("--"+factorISH);
 	System.out.println("--"+factorPoints);
-	System.out.println("-dateInicialPromo-"+dateInicialPromo);
-   	System.out.println("-dateFinalPromo-"+dateFinalPromo);
-   	System.out.println("-porcentaje-"+porcentaje);
+	System.out.println("-dateInicialPromo-"+avail.getDateInicialPromo());
+   	System.out.println("-dateFinalPromo-"+avail.getDateFinalPromo());
+   	System.out.println("-porcentaje-"+avail.getPorcentaje());
 	System.out.println("-6-"+factorCash);
 
 
