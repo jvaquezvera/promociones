@@ -25,6 +25,36 @@ public class PaymentDTO implements Comparable<PaymentDTO>{
 	@XmlAttribute(name="mcash")
 	private float cash;
 	
+	private float cashPromo;
+                    
+        private float pointsPromo;
+                    
+        private float mixedPointsPromo;
+
+    	public float getCashPromo() {
+        	return cashPromo;
+    	}
+
+    	public void setCashPromo(float cashPromo) {
+        	this.cashPromo = cashPromo;
+    	}
+
+    	public float getPointsPromo() {
+        	return pointsPromo;
+    	}
+
+    	public void setPointsPromo(float pointsPromo) {
+        	this.pointsPromo = pointsPromo;
+    	}
+
+    	public float getMixedPointsPromo() {
+        	return mixedPointsPromo;
+    	}
+
+    	public void setMixedPointsPromo(float mixedPointsPromo) {
+        	this.mixedPointsPromo = mixedPointsPromo;
+    	}
+
 	public Integer getPoints() {
 		return points;
 	}
