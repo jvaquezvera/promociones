@@ -124,9 +124,9 @@ public class PointsCalculator {
 				float descuento= 1- (avail.getPorcentaje()/100);
 				roomRate.setPromotion(true);
 				
-			roomRate.getPayment().setPointsPromo(Integer.parseInt(payment.getPoints() * descuento));
+			roomRate.getPayment().setPointsPromo(Math.round(payment.getPoints() * descuento));
 			roomRate.getPayment().setCashPromo(payment.getCash() * descuento );
-			roomRate.getPayment().setMixedPointsPromo(payment.getMixedPoints() * 					 descuento);							
+			roomRate.getPayment().setMixedPointsPromo(Math.round(payment.getMixedPoints() * 					 descuento));							
 		
 			}
 					
