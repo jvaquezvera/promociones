@@ -8,8 +8,28 @@
     <hideColumn>false</hideColumn>
     <width>222</width>
   </descriptionCol>
-  <metadataCols/>
-  <attributeCols/>
+  <metadataCols>
+    <metadata-column52>
+      <hideColumn>true</hideColumn>
+      <width>100</width>
+      <metadata></metadata>
+    </metadata-column52>
+  </metadataCols>
+  <attributeCols>
+    <attribute-column52>
+      <typedDefaultValue>
+        <valueNumeric class="int">50</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </typedDefaultValue>
+      <hideColumn>false</hideColumn>
+      <width>-1</width>
+      <attribute>salience</attribute>
+      <reverseOrder>false</reverseOrder>
+      <useRowNumber>false</useRowNumber>
+    </attribute-column52>
+  </attributeCols>
   <conditionPatterns>
     <Pattern52>
       <factType>AvailavilityResDTO</factType>
@@ -33,6 +53,7 @@
         </condition-column52>
       </conditions>
       <window>
+        <operator></operator>
         <parameters/>
       </window>
     </Pattern52>
@@ -127,6 +148,16 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
         <valueString>OAG</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
@@ -158,6 +189,16 @@
       <value>
         <valueString>F.I. MÉRIDA</valueString>
         <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>NUMERIC_INTEGER</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -195,6 +236,16 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
         <valueString>OSP</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
@@ -226,6 +277,16 @@
       <value>
         <valueString>O.H. GUADALAJARA PERIFÉRICO PONIENTE</valueString>
         <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>NUMERIC_INTEGER</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -263,6 +324,16 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
         <valueString>OPZ</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
@@ -294,6 +365,16 @@
       <value>
         <valueString>O.H. VILLAHERMOSA CENTRO</valueString>
         <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>NUMERIC_INTEGER</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -331,6 +412,16 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
         <valueString>OQS</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
@@ -362,6 +453,16 @@
       <value>
         <valueString>GM MORELIA BELÓ</valueString>
         <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>NUMERIC_INTEGER</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -399,6 +500,16 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
         <valueString>OPV</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
@@ -433,6 +544,16 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
         <valueString>GTO</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
@@ -449,6 +570,92 @@
       </value>
       <value>
         <valueNumeric class="float">10.0</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_FLOAT</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+    </list>
+    <list>
+      <value>
+        <valueNumeric class="int">11</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>yyyy-MM-dd</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>yyyy-MM-dd</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>NUMERIC_FLOAT</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+    </list>
+    <list>
+      <value>
+        <valueNumeric class="int">12</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>yyyy-MM-dd</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>yyyy-MM-dd</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
         <valueString></valueString>
         <dataType>NUMERIC_FLOAT</dataType>
         <isOtherwise>false</isOtherwise>
