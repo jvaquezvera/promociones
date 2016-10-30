@@ -33,7 +33,7 @@ public class PaymentDTO implements Comparable<PaymentDTO>
 
    private int percentage;
 
-   public float getPercentage()
+   public int getPercentage()
    {
       return percentage;
    }
