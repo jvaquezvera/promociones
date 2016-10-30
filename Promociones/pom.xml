@@ -4,7 +4,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.posadas.process</groupId>
   <artifactId>Promociones</artifactId>
-  <version>2.4</version>
+  <version>2.5</version>
   <name>Promociones</name>
   <description>Proyecto que contiene tabla de descicion para el manejo de ofertas</description>
   <build>
