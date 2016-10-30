@@ -119,7 +119,9 @@ public class PointsCalculator {
 			System.out.println("roomRate despues del calculo: " + roomRate);
  			//aplicando descuentos
 			System.out.println("validando fecha dentro de rango de promocion");
-
+			if( isInPromotion(roomRate.getStart(),avail.getDateInicialPromo(),avail.getDateFinalPromo() )){
+				System.out.println("aplicando promocion.....");	
+			}
 					
 	
  			if(tot.containsKey(roomRate.getRoomType())){
@@ -167,7 +169,7 @@ public class PointsCalculator {
             resultado = true;
      }
   } catch (ParseException e) {
-             System.out.println("Se Produjo un Error!!!  "+e.getMessage());
+             return false;
   }  
     return resultado;
  }
