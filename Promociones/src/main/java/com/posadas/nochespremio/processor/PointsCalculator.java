@@ -148,6 +148,7 @@ public class PointsCalculator {
 				totAcum.cashPromo += payment.getCashPromo();
  				totAcum.mixedPointsPromo += payment.getMixedPointsPromo();
  				totAcum.pointsPromo += payment.getPointsPromo();
+				totAcum.porcentaje=payment.getPercentage();
  				
  				tot.put(roomRate.getRoomType(), totAcum);
  			}else{
@@ -157,7 +158,8 @@ public class PointsCalculator {
  											payment.getCash(),
 											payment.getPointsPromo(),
 											payment.getMixedPointsPromo(),
-											payment.getCashPromo());
+											payment.getCashPromo(),
+											payment.getPercentage());
  				tot.put(roomRate.getRoomType(), totAcum);
  			}
  		}
@@ -209,6 +211,7 @@ public class PointsCalculator {
 			p.setPointsPromo(entry.getValue().pointsPromo);
 			p.setCashPromo(new Float(entry.getValue().cashPromo));
 			p.setMixedPointsPromo(entry.getValue().mixedPointsPromo);
+		
 			payments.add(p);
 		}
 		
@@ -234,14 +237,16 @@ public class PointsCalculator {
 		int pointsPromo;
 		int mixedPointsPromo;
 		float cashPromo;
+		private float porcentaje;
 		
-		public TotalPoints(int points, int mixedPoints, float cash,int pointsPromo, int mixedPointsPromo, float cashPromo) {
+		public TotalPoints(int points, int mixedPoints, float cash,int pointsPromo, int mixedPointsPromo, float cashPromo, float porcentaje) {
 			this.cash = cash;
 			this.points = points;
 			this.mixedPoints = mixedPoints;
 			this.cashPromo = cashPromo;
 			this.pointsPromo = pointsPromo;
 			this.mixedPointsPromo = mixedPointsPromo;
+			this.porcentaje=porcentaje;
 		}
 		
 		@Override
