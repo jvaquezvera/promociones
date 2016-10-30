@@ -211,7 +211,7 @@ public class PointsCalculator {
 			p.setPointsPromo(entry.getValue().pointsPromo);
 			p.setCashPromo(new Float(entry.getValue().cashPromo));
 			p.setMixedPointsPromo(entry.getValue().mixedPointsPromo);
-			p.setPercentage(Math.round(entry.getValue().porcentaje))
+			p.setPercentage(Math.round(entry.getValue().porcentaje));
 		
 			payments.add(p);
 		}
