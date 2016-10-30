@@ -3,6 +3,7 @@ import com.posadas.nochespremio.dto.AvailavilityResDTO
 
 rule "inicializa parametros"
 no-loop true
+salience 100
 when 
 	eval(true)
 then
@@ -21,7 +22,7 @@ rule "calcula response"
 no-loop true
 when 
 	$pointsCalculator: PointsCalculator( )
-	$availavilityResDTO: AvailavilityResDTO(factor != 0 )
+	$availavilityResDTO: AvailavilityResDTO()
 	
 then
 	$pointsCalculator.getPoints($availavilityResDTO);
