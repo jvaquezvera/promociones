@@ -12,6 +12,9 @@ import com.posadas.nochespremio.dto.AvailavilityResDTO;
 import com.posadas.nochespremio.dto.PaymentDTO;
 import com.posadas.nochespremio.dto.RoomRateDTO;
 import java.text.ParseException;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 public class PointsCalculator {
 	
@@ -89,7 +92,11 @@ public class PointsCalculator {
 	System.out.println("--"+factorAP);
 	System.out.println("--"+factorISH);
 	System.out.println("--"+factorPoints);
+	System.out.println("-dateInicialPromo-"+dateInicialPromo);
+   	System.out.println("-dateFinalPromo-"+dateFinalPromo);
+   	System.out.println("-porcentaje-"+porcentaje);
 	System.out.println("-6-"+factorCash);
+
 
 
  		Map<String,TotalPoints> tot=new HashMap<>();
@@ -98,7 +105,7 @@ public class PointsCalculator {
  		avail.setProgramName(avail.getProgramName());
  		avail.setFactor(factor);
  		System.out.println("Calculando puntos con Factor: " + factor);
-                                        System.out.println("Calculando puntos con Factor 2: " + avail.getRoomRates());
+                System.out.println("Calculando puntos con Factor 2: " + avail.getRoomRates());
  		
  		for(RoomRateDTO roomRate : avail.getRoomRates()){
 // 			Calculo de puntos por noche
@@ -110,7 +117,11 @@ public class PointsCalculator {
 			roomRate.setPayment(payment);
 			
 			System.out.println("roomRate despues del calculo: " + roomRate);
- 			
+ 			//aplicando descuentos
+			System.out.println("validando fecha dentro de rango de promocion");
+
+					
+	
  			if(tot.containsKey(roomRate.getRoomType())){
  				TotalPoints totAcum = tot.get(roomRate.getRoomType());
  				
@@ -136,6 +147,31 @@ public class PointsCalculator {
  		
  	}
  	
+
+	private boolean isInPromotion(String fechaReservaStr, String fechaInicalPromoStr, String fechaFinalPromoStr) {  
+  System.out.println("fecha Reservacion = "+fechaReservaStr+"\n" +
+    "inicio promocion = "+fechaInicalPromoStr+"\n fin de promocion: "+fechaFinalPromoStr);  
+  
+  boolean resultado=false;
+  try {
+   
+   SimpleDateFormat formateador = new SimpleDateFormat("dd/MM/yyyy"); 
+   Date fechaReserva = formateador.parse(fechaReservaStr);
+   Date fechaInicialPromo = formateador.parse(fechaInicalPromoStr);
+   Date fechaFinalPromo = formateador.parse(fechaFinalPromoStr);
+    
+    if ( (fechaReserva.before(fechaFinalPromo)  || (fechaReserva.equals(fechaFinalPromo)) )&& 
+            (fechaReserva.after(fechaInicialPromo)  || (fechaReserva.equals(fechaInicialPromo)) )
+            ){
+            
+            resultado = true;
+     }
+  } catch (ParseException e) {
+             System.out.println("Se Produjo un Error!!!  "+e.getMessage());
+  }  
+    return resultado;
+ }
+
 	private void createTotalPayment(Map<String,TotalPoints> tot, AvailavilityResDTO avail) {
 		List<PaymentDTO> payments=new ArrayList<>(tot.size());
 		avail.setTotalPayment(payments);
