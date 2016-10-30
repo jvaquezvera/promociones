@@ -128,6 +128,11 @@ public class PointsCalculator {
 			roomRate.getPayment().setCashPromo(payment.getCash() * descuento );
 			roomRate.getPayment().setMixedPointsPromo(Math.round(payment.getMixedPoints() * 					 descuento));							
 		
+			}else{
+			roomRate.getPayment().setPointsPromo(payment.getPoints());
+			roomRate.getPayment().setCashPromo(payment.getCash());
+			roomRate.getPayment().setMixedPointsPromo(payment.getMixedPoints());							
+				
 			}
 					
 	
