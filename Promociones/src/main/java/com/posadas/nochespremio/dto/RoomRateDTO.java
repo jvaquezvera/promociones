@@ -21,6 +21,7 @@ public class RoomRateDTO implements Comparable<RoomRateDTO>{
 	private String roomType;
 	private float amount;
 	private String currency;
+	private boolean promotion;
 	private PaymentDTO payment;
 	
 	public Date getStartDate(){
@@ -93,4 +94,12 @@ public class RoomRateDTO implements Comparable<RoomRateDTO>{
 		return this.getStartDate().compareTo(o.getStartDate());
 	}
 	
+	public boolean getPromotion(){
+		return this.promotion;
+	}
+	
+	public void setPromotion(boolean promotion){
+		this.promotion= promotion;
+	}
+
 }
