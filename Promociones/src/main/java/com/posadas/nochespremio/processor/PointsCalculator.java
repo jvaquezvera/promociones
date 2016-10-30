@@ -121,6 +121,7 @@ public class PointsCalculator {
 			System.out.println("validando fecha dentro de rango de promocion");
 			if( isInPromotion(roomRate.getStart(),avail.getDateInicialPromo(),avail.getDateFinalPromo() )){
 				System.out.println("aplicando promocion.....apicando"+avail.getPorcentaje());
+				roomRate.setPromotion(true);
 				
 	
 			}
