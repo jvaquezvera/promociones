@@ -20,7 +20,7 @@ end
 rule "calcula response"
 no-loop true
 when 
-	$pointsCalculator: PointsCalculator()
+	$pointsCalculator: PointsCalculator(totalPayment.empty )
 	$availavilityResDTO: AvailavilityResDTO()
 then
 	$pointsCalculator.getPoints($availavilityResDTO);
