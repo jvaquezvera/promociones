@@ -24,7 +24,8 @@ when
 	$availavilityResDTO: AvailavilityResDTO()
 then
 	$pointsCalculator.getPoints($availavilityResDTO);
-	System.out.println($pointsCalculator);
+	System.out.println("update");
+        update($pointsCalculator);
 end
 
 
