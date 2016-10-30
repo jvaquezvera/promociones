@@ -98,7 +98,9 @@ public class PointsCalculator {
 			
  			PaymentDTO payment = this.calculate(roomRate.getCurrency(), roomRate.getAmount(), factor, avail.getRateExchange(),avail.getIva());
  			payment.setIdentifier(identifier++);
- 			roomRate.setPayment(payment);
+ 			payment.setRoomType( roomRate.getRoomType());
+			roomRate.setPayment(payment);
+			
 			System.out.println("roomRate despues del calculo: " + roomRate);
  			
  			if(tot.containsKey(roomRate.getRoomType())){
