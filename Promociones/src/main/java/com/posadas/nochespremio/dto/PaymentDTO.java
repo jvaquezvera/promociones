@@ -31,6 +31,18 @@ public class PaymentDTO implements Comparable<PaymentDTO>
 
    private int mixedPointsPromo;
 
+   private int percentage;
+
+   public float getPercentage()
+   {
+      return percentage;
+   }
+
+   public void setPercentage(int percentage)
+   {
+      this.percentage = percentage;
+   }	
+
    public float getCashPromo()
    {
       return cashPromo;
