@@ -138,13 +138,19 @@ public class PointsCalculator {
  				totAcum.cash += payment.getCash();
  				totAcum.mixedPoints += payment.getMixedPoints();
  				totAcum.points += payment.getPoints();
+				totAcum.cashPromo += payment.getCashPromo();
+ 				totAcum.mixedPointsPromo += payment.getMixedPointsPromo();
+ 				totAcum.pointsPromo += payment.getPointsPromo();
  				
  				tot.put(roomRate.getRoomType(), totAcum);
  			}else{
  				System.out.println("Agregando tipo de habitacion: " + roomRate.getRoomType());
  				TotalPoints totAcum = new TotalPoints(payment.getPoints(), 
  											payment.getMixedPoints(), 
- 											payment.getCash());
+ 											payment.getCash(),
+											payment.getPointsPromo(),
+											payment.getMixedPointsPromo(),
+											payment.getCashPromo());
  				tot.put(roomRate.getRoomType(), totAcum);
  			}
  		}
@@ -215,11 +221,18 @@ public class PointsCalculator {
 		int points;
 		int mixedPoints;
 		float cash;
+		int pointsPromo
+		int mixedPintsPromo;
+		float cashPromo;
+..
 		
-		public TotalPoints(int points, int mixedPoints, float cash) {
+		public TotalPoints(int points, int mixedPoints, float cash,int pointsPromo, int mixedPointsPromo, float cashPromo) {
 			this.cash = cash;
 			this.points = points;
 			this.mixedPoints = mixedPoints;
+			this.cashPromo = cashPromo;
+			this.pointsPromo = pointsPromo;
+			this.mixedPointsPromo = mixedPointsPromo;
 		}
 		
 		@Override
