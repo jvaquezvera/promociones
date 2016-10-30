@@ -157,7 +157,7 @@ public class PointsCalculator {
   boolean resultado=false;
   try {
    
-   SimpleDateFormat formateador = new SimpleDateFormat("dd/MM/yyyy"); 
+   SimpleDateFormat formateador = new SimpleDateFormat("yyyy-MM-dd"); 
    Date fechaReserva = formateador.parse(fechaReservaStr);
    Date fechaInicialPromo = formateador.parse(fechaInicalPromoStr);
    Date fechaFinalPromo = formateador.parse(fechaFinalPromoStr);
