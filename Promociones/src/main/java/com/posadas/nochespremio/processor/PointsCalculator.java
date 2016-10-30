@@ -139,7 +139,7 @@ public class PointsCalculator {
  				totAcum.mixedPoints += payment.getMixedPoints();
  				totAcum.points += payment.getPoints();
 				totAcum.cashPromo += payment.getCashPromo();
- 				totAcum.mixedPintsPromo += payment.getMixedPointsPromo();
+ 				totAcum.mixedPointsPromo += payment.getMixedPointsPromo();
  				totAcum.pointsPromo += payment.getPointsPromo();
  				
  				tot.put(roomRate.getRoomType(), totAcum);
@@ -222,7 +222,7 @@ public class PointsCalculator {
 		int mixedPoints;
 		float cash;
 		int pointsPromo;
-		int mixedPintsPromo;
+		int mixedPointsPromo;
 		float cashPromo;
 ..
 		
