@@ -124,7 +124,7 @@ public class PointsCalculator {
 				float descuento= 1- (avail.getPorcentaje()/100);
 				roomRate.setPromotion(true);
 				
-			roomRate.getPayment().setPointsPromo(payment.getPoints() * descuento);
+			roomRate.getPayment().setPointsPromo(Integer.valueOf(payment.getPoints() * descuento));
 			roomRate.getPayment().setCashPromo(payment.getCash() * descuento );
 			roomRate.getPayment().setMixedPointsPromo(payment.getMixedPoints() * 					 descuento);							
 		
@@ -139,7 +139,7 @@ public class PointsCalculator {
  				totAcum.mixedPoints += payment.getMixedPoints();
  				totAcum.points += payment.getPoints();
 				totAcum.cashPromo += payment.getCashPromo();
- 				totAcum.mixedPointsPromo += payment.getMixedPointsPromo();
+ 				totAcum.mixedPintsPromo += payment.getMixedPointsPromo();
  				totAcum.pointsPromo += payment.getPointsPromo();
  				
  				tot.put(roomRate.getRoomType(), totAcum);
@@ -221,7 +221,7 @@ public class PointsCalculator {
 		int points;
 		int mixedPoints;
 		float cash;
-		int pointsPromo
+		int pointsPromo;
 		int mixedPintsPromo;
 		float cashPromo;
 ..
