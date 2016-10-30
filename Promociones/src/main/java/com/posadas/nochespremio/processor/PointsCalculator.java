@@ -84,6 +84,14 @@ public class PointsCalculator {
  	
  	public void getPoints(AvailavilityResDTO avail) throws ParseException {
  		System.out.println("Usando tipo de cambio: "+avail.getRateExchange());
+		System.out.println("1"+factorFR);
+	System.out.println("--"+factorMO);
+	System.out.println("--"+factorAP);
+	System.out.println("--"+factorISH);
+	System.out.println("--"+factorPoints);
+	System.out.println("-6-"+factorCash);
+
+
  		Map<String,TotalPoints> tot=new HashMap<>();
  		short identifier = 1;
  		float factor = this.getFactor(avail.getProgramName());
