@@ -121,9 +121,13 @@ public class PointsCalculator {
 			System.out.println("validando fecha dentro de rango de promocion");
 			if( isInPromotion(roomRate.getStart(),avail.getDateInicialPromo(),avail.getDateFinalPromo() )){
 				System.out.println("aplicando promocion.....apicando"+avail.getPorcentaje());
+				float descuento= 1- (avail.getPorcentaje()/100);
 				roomRate.setPromotion(true);
 				
-	
+			roomRate.getPayment().setPointsPromo(payment.getPoints() * descuento);
+			roomRate.getPayment().setCashPromo(payment.getCash() * descuento );
+			roomRate.getPayment().setMixedPointsPromo(payment.getMixedPoints() * 					 descuento);							
+		
 			}
 					
 	
