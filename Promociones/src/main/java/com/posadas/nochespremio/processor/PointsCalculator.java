@@ -129,6 +129,7 @@ public class PointsCalculator {
 			roomRate.getPayment().setMixedPointsPromo(Math.round(payment.getMixedPoints() * 					 descuento));							
 		
 			}else{
+				System.out.println("fuera de promocion.....apicando"+avail.getPorcentaje());
 			roomRate.getPayment().setPointsPromo(payment.getPoints());
 			roomRate.getPayment().setCashPromo(payment.getCash());
 			roomRate.getPayment().setMixedPointsPromo(payment.getMixedPoints());							
